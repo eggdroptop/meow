@@ -1,0 +1,77 @@
+// GPA CALCULATOR
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+int
+main ()
+{
+  double ClassOneCreditHours;	// variables identified
+  double ClassTwoCreditHours;
+  double ClassThreeCreditHours;
+  double ClassFourCreditHours;
+  double ClassFiveCreditHours;
+  double ClassOneCreditPoints;
+  double ClassTwoCreditPoints;
+  double ClassThreeCreditPoints;
+  double ClassFourCreditPoints;
+  double ClassFiveCreditPoints;
+  double TotalCreditHours;
+  double CalculatedGPA;
+
+  cout << "GPA CALCULATOR" << endl;
+  cout << "1/23" << endl;
+  cout << "" << endl;
+  cout <<
+    "(you need # of credit hours & credit points earned as numerical values)"
+    << endl;
+  cout << "" << endl;
+  cout << "" << endl;
+
+  cout << "How many credit HOURS is class one?   ";	// User inputs credit hours per class
+  cin >> ClassOneCreditHours;
+  cout << "How many credit HOURS is class two?   ";
+  cin >> ClassTwoCreditHours;
+  cout << "How many credit HOURS is class three? ";
+  cin >> ClassThreeCreditHours;
+  cout << "How many credit HOURS is class four?  ";
+  cin >> ClassFourCreditHours;
+  cout << "How many credit HOURS is class five?  ";
+  cin >> ClassFiveCreditHours;
+  cout << "" << endl;
+  cout << "" << endl;
+
+  cout << "INFO: A=4, B=3, C=2, D=1" << endl;	// User inputs credit points earned per class
+  cout << "How many credit POINTS will you earn in class one?   ";
+  cin >> ClassOneCreditPoints;
+  cout << "" << endl;
+  cout << "How many credit POINTS will you earn in class two?   ";
+  cin >> ClassTwoCreditPoints;
+  cout << "" << endl;
+  cout << "How many credit POINTS will you earn in class three? ";
+  cin >> ClassThreeCreditPoints;
+  cout << "" << endl;
+  cout << "How many credit POINTS will you earn in class four?  ";
+  cin >> ClassFourCreditPoints;
+  cout << "" << endl;
+  cout << "How many credit POINTS will you earn in class five?  ";
+  cin >> ClassFiveCreditPoints;
+  cout << "" << endl;
+  cout << "" << endl;
+
+  TotalCreditHours =
+    (ClassOneCreditHours + ClassTwoCreditHours + ClassThreeCreditHours +
+     ClassFourCreditHours + ClassFiveCreditHours);
+  CalculatedGPA =
+    ((ClassOneCreditHours * ClassOneCreditPoints) +
+     (ClassTwoCreditHours * ClassTwoCreditPoints) +
+     (ClassThreeCreditHours * ClassThreeCreditPoints) +
+     (ClassFourCreditHours * ClassFourCreditPoints) +
+     (ClassFiveCreditHours * ClassFiveCreditPoints)) / TotalCreditHours;
+
+  cout << "INFO: A=4.0, B=3.0, C=2.0, D=1.0" << endl;
+  cout << "Your Calculated GPA is: " << fixed << setprecision (1) <<
+    CalculatedGPA << endl;
+  // Calculates GPA and is then printed to the screen
+  return 0;
+}

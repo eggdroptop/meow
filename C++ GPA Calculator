@@ -72,6 +72,6 @@ main ()
   cout << "INFO: A=4.0, B=3.0, C=2.0, D=1.0" << endl;
   cout << "Your Calculated GPA is: " << fixed << setprecision (1) <<
     CalculatedGPA << endl;
-  // Calculates GPA and is then printed to the screen
+  // Calculates floating point GPA and is then printed to the screen
   return 0;
 }
